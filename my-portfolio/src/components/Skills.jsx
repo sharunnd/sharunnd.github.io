@@ -6,7 +6,7 @@ import { Element } from "react-scroll";
 export function Skills(){
 
     return (
-        <Element  name="skillsSection">
+        <Element  name="skillsSection" id="skills">
             <Box bg="white" height="100vh">
                <Text>Skills</Text>
             </Box>

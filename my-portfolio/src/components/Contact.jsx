@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 export function Contact(){
 
     return (
-        <Element  name="contactSection">
+        <Element  name="contactSection" id="contact">
             <Box bg="gray" height="100vh">
                <Text>Contact</Text>
             </Box>
