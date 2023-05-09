@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.002c3700.css",
-    "main.js": "/static/js/main.092b077b.js",
+    "main.js": "/static/js/main.ce06efd0.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/bewakoof-homepage.png": "/static/media/bewakoof-homepage.e499dcaa87594c034a9c.png",
+    "static/media/rentomojoHomePage.png": "/static/media/rentomojoHomePage.e9623a71cedc4500466f.png",
+    "static/media/myntra.png": "/static/media/myntra.f29771f800a9d011fd5e.png",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.132e30214afbdf0492a4.jpg",
     "index.html": "/index.html",
     "main.002c3700.css.map": "/static/css/main.002c3700.css.map",
-    "main.092b077b.js.map": "/static/js/main.092b077b.js.map",
+    "main.ce06efd0.js.map": "/static/js/main.ce06efd0.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.002c3700.css",
-    "static/js/main.092b077b.js"
+    "static/js/main.ce06efd0.js"
   ]
 }
