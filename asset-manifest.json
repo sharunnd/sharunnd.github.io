@@ -1,19 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.002c3700.css",
-    "main.js": "/static/js/main.ce06efd0.js",
+    "main.js": "/static/js/main.402bf5f8.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/bewakoof-homepage.png": "/static/media/bewakoof-homepage.e499dcaa87594c034a9c.png",
     "static/media/rentomojoHomePage.png": "/static/media/rentomojoHomePage.e9623a71cedc4500466f.png",
     "static/media/myntra.png": "/static/media/myntra.f29771f800a9d011fd5e.png",
+    "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
+    "static/media/chakraui.png": "/static/media/chakraui.e4cb472ccaabf22affba.png",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.132e30214afbdf0492a4.jpg",
+    "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
+    "static/media/typescript.png": "/static/media/typescript.9b1779a2fd3504559e59.png",
+    "static/media/html.png": "/static/media/html.2ba4fabc69a89a8f71e6.png",
+    "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
+    "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.002c3700.css.map": "/static/css/main.002c3700.css.map",
-    "main.ce06efd0.js.map": "/static/js/main.ce06efd0.js.map",
+    "main.402bf5f8.js.map": "/static/js/main.402bf5f8.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.002c3700.css",
-    "static/js/main.ce06efd0.js"
+    "static/js/main.402bf5f8.js"
   ]
 }
