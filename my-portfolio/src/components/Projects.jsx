@@ -9,9 +9,11 @@ export function Project(){
     return (
         <Element  name="projectSection" id="projects">
             <Heading>Projects</Heading>
-            <VStack>
+            <VStack bg="#041C32" color="white">
+
+              <Box className="project-card">
               <HStack w={700}>
-               <Box className="project-card">
+               <Box>
                   <Text className="project-title">Bewakoof Clone</Text>
                   <Text className="project-description">Bewakoof is an online fashion and lifestyle E-commerce website</Text>
                   <HStack class="project-tech-stack">
@@ -28,12 +30,14 @@ export function Project(){
                </Box>
                </HStack>
                 <HStack>
-                    <Button><Link href="https://github.com/sharunnd/towering-grade-7940">GitHub</Link></Button>
-                    <Button><Link href="https://wondrous-starship-6605a1.netlify.app/">Deployment</Link></Button>
+                    <Button className="project-github-link"><Link href="https://github.com/sharunnd/towering-grade-7940">GitHub</Link></Button>
+                    <Button className="project-deployed-link"><Link href="https://wondrous-starship-6605a1.netlify.app/">Deployment</Link></Button>
                 </HStack>
+                </Box>
 
+                <Box className="project-card">
                 <HStack w={700}>
-               <Box className="project-card">
+               <Box>
                   <Text className="project-title">Rentomojo Clone</Text>
                   <Text className="project-description">It is an online rental platform that allows customers to rent furniture, appliances and other household items</Text>
                   <HStack class="project-tech-stack">
@@ -47,12 +51,14 @@ export function Project(){
                </Box>
                </HStack>
                 <HStack>
-                    <Button><Link href="https://github.com/sakshi10393/brisk-smash-9621">GitHub</Link></Button>
-                    <Button><Link href="https://joyful-valkyrie-7a303c.netlify.app/">Deployment</Link></Button>
+                    <Button className="project-github-link"><Link href="https://github.com/sakshi10393/brisk-smash-9621">GitHub</Link></Button>
+                    <Button className="project-deployed-link"><Link href="https://joyful-valkyrie-7a303c.netlify.app/">Deployment</Link></Button>
                 </HStack>
+                </Box>
 
+                <Box className="project-card">
                 <HStack w={700}>
-               <Box className="project-card">
+               <Box>
                   <Text className="project-title">Myntra Clone</Text>
                   <Text className="project-description">Myntra is a major Indian fashion e-commerce company headquartered in Bengaluru, India</Text>
                   <HStack class="project-tech-stack">
@@ -66,9 +72,31 @@ export function Project(){
                </Box>
                </HStack>
                 <HStack>
-                    <Button><Link href="https://github.com/sharunnd/soft-jelly-7030">GitHub</Link></Button>
-                    <Button><Link href="https://cheery-melba-acacca.netlify.app/">Deployment</Link></Button>
+                    <Button className="project-github-link"><Link href="https://github.com/sharunnd/soft-jelly-7030">GitHub</Link></Button>
+                    <Button className="project-deployed-link"><Link href="https://cheery-melba-acacca.netlify.app/">Deployment</Link></Button>
                 </HStack>
+                </Box>
+
+                <Box className="project-card">
+                <HStack w={700}>
+               <Box>
+                  <Text className="project-title">Myntra Clone</Text>
+                  <Text className="project-description">Myntra is a major Indian fashion e-commerce company headquartered in Bengaluru, India</Text>
+                  <HStack class="project-tech-stack">
+                    <Button>HTML</Button>
+                    <Button>CSS</Button>
+                    <Button>JavaScript</Button>
+                  </HStack>
+               </Box>
+               <Box>
+                 <Image src={myntra} width={400}  alt='mytntraWeb' />
+               </Box>
+               </HStack>
+                <HStack>
+                    <Button className="project-github-link"><Link href="https://github.com/sharunnd/soft-jelly-7030">GitHub</Link></Button>
+                    <Button className="project-deployed-link"><Link href="https://cheery-melba-acacca.netlify.app/">Deployment</Link></Button>
+                </HStack>
+                </Box>
             </VStack>
             
         </Element>
