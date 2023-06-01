@@ -1,6 +1,6 @@
 import { Box, Text, Image, HStack, Heading, Button } from "@chakra-ui/react";
 import { Element } from "react-scroll";
-
+import "../App.css"
 import { handleResume } from "../resume";
 
 export function About(){

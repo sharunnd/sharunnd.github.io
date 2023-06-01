@@ -8,6 +8,7 @@ import { Home } from './components/Home';
 import { Skills } from './components/Skills';
 import { Project } from './components/Projects';
 import { Calender } from './components/Calender';
+import { Empty } from './components/Empty';
 
 
 
@@ -49,6 +50,7 @@ function App() {
     // </Box>
     <>
     <Navbar />
+    {/* <Empty /> */}
     <Home />
     <About />
     <Skills />

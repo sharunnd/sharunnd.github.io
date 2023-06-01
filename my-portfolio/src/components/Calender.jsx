@@ -26,14 +26,14 @@ export function Calender(){
         </Box>
             
         <SimpleGrid columns={3}>    
-            <Box id="github-stats-card">
-              <Image src="https://github-readme-stats.vercel.app/api?username=sharunnd&hide=contribs,prs"/>
+            <Box >
+              <Image id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=sharunnd&hide=contribs,prs"/>
             </Box>
-            <Box id="github-streak-stats">
-              <Image src="https://github-readme-streak-stats.herokuapp.com/?user=sharunnd"/>
+            <Box >
+              <Image id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=sharunnd"/>
             </Box>
-            <Box id="github-top-langs">
-              <Image src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharunnd&hide_progress=true"/>
+            <Box >
+              <Image id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharunnd&hide_progress=true"/>
             </Box>
         </SimpleGrid>
         </Box>

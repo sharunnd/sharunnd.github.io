@@ -2,6 +2,17 @@
   text-align: center;
 }
 
-.my-link{
+.nav-link{
   cursor: pointer;
+}
+
+.nav-link{
+
+  margin-right: 20px;
+
+}
+
+
+#home{
+  margin-bottom: 100px;
 }
