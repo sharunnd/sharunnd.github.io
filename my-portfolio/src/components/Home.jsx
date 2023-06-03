@@ -10,12 +10,12 @@ export function Home(){
     return (
         <Element  name="homeSection" id="home">
             {/* <Box  color={"white"}>Home</Box> */}
-            <HStack border="1px solid black" height="100vh">
-              <Box width="500px" border="1px solid red" ml={300} >
+            <HStack height="100vh">
+              <Box width="500px" ml={300} boxShadow='xs' p='6' borderRadius='10px' bg='#e2e9ed' padding={30}>
                   <Text fontSize={30} fontWeight={700} color={"#1DA1F2"}>Hi, I'm</Text>
                   <Text id="user-detail-name" fontSize={30} fontWeight={700} color={"#1DA1F2"} lineHeight={0}>Sharun N D</Text>
                   <Text fontSize={30} fontWeight={700} color={"#1DA1F2"}>Full Stack Web Developer</Text>
-                  <Text id="user-detail-intro" border="1px solid blue" fontSize={18} color="#444c61" >A full-stack web developer who's passionate about turning ideas into reality.
+                  <Text id="user-detail-intro" fontSize={18} color="#444c61" >A full-stack web developer who's passionate about turning ideas into reality.
                        I'm dedicated to delivering high-quality products that are both visually stunning and highly functional.
                   </Text>
                   <HStack>
@@ -27,8 +27,8 @@ export function Home(){
                      </Box>
                   </HStack>
               </Box>
-              <Box borderRadius='10px' border="1px solid blue" >
-                   <Image src={profilePic} className="home-img" ml={100} borderRadius='50%'  boxSize='150px' alt='sharun' />
+              <Box borderRadius='10px'>
+                   <Image src={profilePic} className="home-img" ml={100} borderRadius='10px'  boxSize='150px' alt='sharun' />
               </Box>
             </HStack>
         </Element>

@@ -8,10 +8,11 @@ export function Project(){
 
     return (
         <Element  name="projectSection" id="projects">
-            <Heading>Projects</Heading>
-            <VStack bg="#041C32" color="white">
+            <Heading color="white">Projects</Heading>
+            <Heading ml={50}>Projects</Heading>
+            <VStack>
 
-              <Box className="project-card">
+              <Box className="project-card" border="1px solid red" p={30}>
               <HStack w={700}>
                <Box>
                   <Text className="project-title">Bewakoof Clone</Text>
@@ -35,7 +36,7 @@ export function Project(){
                 </HStack>
                 </Box>
 
-                <Box className="project-card">
+                <Box className="project-card" border="1px solid red" p={30}>
                 <HStack w={700}>
                <Box>
                   <Text className="project-title">Rentomojo Clone</Text>
@@ -56,7 +57,7 @@ export function Project(){
                 </HStack>
                 </Box>
 
-                <Box className="project-card">
+                <Box className="project-card" border="1px solid red" p={30}>
                 <HStack w={700}>
                <Box>
                   <Text className="project-title">Myntra Clone</Text>
@@ -80,22 +81,12 @@ export function Project(){
                 <Box className="project-card">
                 <HStack w={700}>
                <Box>
-                  <Text className="project-title">Myntra Clone</Text>
-                  <Text className="project-description">Myntra is a major Indian fashion e-commerce company headquartered in Bengaluru, India</Text>
+                  <Text className="project-title"></Text>
+                  <Text className="project-description"></Text>
                   <HStack class="project-tech-stack">
-                    <Button>HTML</Button>
-                    <Button>CSS</Button>
-                    <Button>JavaScript</Button>
                   </HStack>
                </Box>
-               <Box>
-                 <Image src={myntra} width={400}  alt='mytntraWeb' />
-               </Box>
                </HStack>
-                <HStack>
-                    <Button className="project-github-link"><Link href="https://github.com/sharunnd/soft-jelly-7030">GitHub</Link></Button>
-                    <Button className="project-deployed-link"><Link href="https://cheery-melba-acacca.netlify.app/">Deployment</Link></Button>
-                </HStack>
                 </Box>
             </VStack>
             

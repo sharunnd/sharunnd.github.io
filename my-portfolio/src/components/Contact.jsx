@@ -14,10 +14,10 @@ export function Contact(){
                <Text id="contact-email" fontSize={20}>Email: sharunnd11@gmail.com</Text>
                <Text id="addres" fontSize={20}>Address: Ernakulam, Kerala</Text>
                <HStack justifyContent={"center"}>
-                     <Box borderRadius={6} bg={"#e2e9ed"} boxSize={40} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                     <Box id="contact-github" borderRadius={6} bg={"#e2e9ed"} boxSize={40} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                         <Link href="https://github.com/sharunnd"><IconButton border={"none"} bg={"#e2e9ed"} icon={<AiFillGithub />} fontSize={20}/></Link>
                      </Box>
-                     <Box borderRadius={6} bg={"#e2e9ed"} boxSize={40} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+                     <Box id="contact-linkedin" borderRadius={6} bg={"#e2e9ed"} boxSize={40} display={"flex"} justifyContent={"center"} alignItems={"center"}>
                          <Link href="https://www.linkedin.com/in/sharun-n-d-8351191b3/"><IconButton border={"none"} fontSize={20} bg={"#e2e9ed"} icon={<AiOutlineLinkedin />} /></Link>
                      </Box>
                 </HStack>

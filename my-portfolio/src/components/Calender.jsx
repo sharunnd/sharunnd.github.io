@@ -1,4 +1,4 @@
-import { Box, SimpleGrid,Image } from "@chakra-ui/react";
+import { Box, SimpleGrid,Image, Heading, Flex, Center } from "@chakra-ui/react";
 import  GithubCalendar  from "react-github-calendar";
 
 
@@ -6,7 +6,8 @@ export function Calender(){
   
     return (
         <Box className="react-activity-calendar">
-        <Box>
+        <Heading ml={50}>Github Calender</Heading>
+        <Center mt={50}>
         <GithubCalendar
           username="sharunnd"
           responsive
@@ -23,19 +24,20 @@ export function Calender(){
             grade0: "#ebedf0",
           }}
         />
-        </Box>
-            
-        <SimpleGrid columns={3}>    
+        </Center>
+        <Heading ml={50}>Github Stats</Heading> 
+        <SimpleGrid columns={3} textAlign={"center"} alignItems={"center"} spacing={30}>    
             <Box >
-              <Image id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=sharunnd&hide=contribs,prs"/>
+              <Image id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=sharunnd&hide=contribs,prs" width="100%"/>
             </Box>
             <Box >
-              <Image id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=sharunnd"/>
+              <Image id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=sharunnd" width="100%"/>
             </Box>
             <Box >
-              <Image id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharunnd&hide_progress=true"/>
+              <Image id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sharunnd&hide_progress=true" width="100%"/>
             </Box>
         </SimpleGrid>
+            
         </Box>
 
       );
