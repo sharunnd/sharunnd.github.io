@@ -1,92 +1,107 @@
-import { Box, Button, HStack, Heading, Text, VStack, Image, Link } from "@chakra-ui/react";
+import { Box, Button, HStack, Heading, Text, VStack, Image, Link, SimpleGrid } from "@chakra-ui/react";
 import { Element } from "react-scroll";
 import bewkoofHomePage from "../images/bewakoof-homepage.png"
 import rentomojoHomePage from "../images/rentomojoHomePage.png"
 import myntra from "../images/myntra.png"
 
 export function Project(){
-
+  const buttonStyle = {
+    bg:"#1DA1F2",
+     border:"none",
+      rounded:"5px" ,
+     p:"5px"
+  };
     return (
         <Element  name="projectSection" id="projects">
             <Heading color="white">Projects</Heading>
             <Heading ml={50}>Projects</Heading>
-            <VStack>
+            <VStack spacing={25}>
 
-              <Box className="project-card" border="1px solid red" p={30}>
+              <Box className="project-card" p={30} boxShadow = "0px 5px 15px #1DA1F2" rounded={5}>
               <HStack w={700}>
                <Box>
-                  <Text className="project-title">Bewakoof Clone</Text>
+                  <Text className="project-title" fontSize={20} fontWeight={700}>Bewakoof Clone</Text>
                   <Text className="project-description">Bewakoof is an online fashion and lifestyle E-commerce website</Text>
-                  <HStack class="project-tech-stack">
-                    <Button>HTML</Button>
-                    <Button>CSS</Button>
-                    <Button>JavaScript</Button>
-                    <Button>React</Button>
-                    <Button>Chakra UI</Button>
-                    <Button>Axios</Button>
-                  </HStack>
+                  <SimpleGrid class="project-tech-stack" columns={3} gap={10} >
+                    <Button className="button-style">HTML</Button>
+                    <Button className="button-style">CSS</Button>
+                    <Button className="button-style">JavaScript</Button>
+                    <Button className="button-style">React</Button>
+                    <Button className="button-style">Chakra UI</Button>
+                    <Button className="button-style">Axios</Button>
+                  </SimpleGrid>
                </Box>
-               <Box>
+               <Box transition="transform 5s" _hover={{ transform: "scale(1.2)"}}>
                  <Image src={bewkoofHomePage} width={400}  alt='bewakoofWeb' />
                </Box>
                </HStack>
-                <HStack>
-                    <Button className="project-github-link"><Link href="https://github.com/sharunnd/towering-grade-7940">GitHub</Link></Button>
-                    <Button className="project-deployed-link"><Link href="https://wondrous-starship-6605a1.netlify.app/">Deployment</Link></Button>
+                <HStack mt={10}>
+                    <Button className="project-github-link" bg="black" border="none" p={5} rounded={5}><Link href="https://github.com/sharunnd/towering-grade-7940" color={"white"} textDecoration="none">GitHub</Link></Button>
+                    <Button className="project-deployed-link" bg="black" border="none" p={5} rounded={5}><Link href="https://wondrous-starship-6605a1.netlify.app/" color={"white"} textDecoration="none">Deployment</Link></Button>
                 </HStack>
                 </Box>
 
-                <Box className="project-card" border="1px solid red" p={30}>
+                <Box className="project-card" p={30} boxShadow = "0px 5px 15px #1DA1F2" rounded={5}>
                 <HStack w={700}>
                <Box>
                   <Text className="project-title">Rentomojo Clone</Text>
                   <Text className="project-description">It is an online rental platform that allows customers to rent furniture, appliances and other household items</Text>
-                  <HStack class="project-tech-stack">
-                    <Button>HTML</Button>
-                    <Button>CSS</Button>
-                    <Button>JavaScript</Button>
-                  </HStack>
+                  <SimpleGrid class="project-tech-stack" columns={3} gap={10}>
+                    <Button className="button-style">HTML</Button>
+                    <Button className="button-style">CSS</Button>
+                    <Button className="button-style">JavaScript</Button>
+                  </SimpleGrid>
                </Box>
-               <Box>
+               <Box transition="transform 5s" _hover={{ transform: "scale(1.2)"}}>
                  <Image src={rentomojoHomePage} width={400}  alt='rentomojoWeb' />
                </Box>
                </HStack>
                 <HStack>
-                    <Button className="project-github-link"><Link href="https://github.com/sakshi10393/brisk-smash-9621">GitHub</Link></Button>
-                    <Button className="project-deployed-link"><Link href="https://joyful-valkyrie-7a303c.netlify.app/">Deployment</Link></Button>
+                    <Button className="project-github-link" bg="black" border="none" p={5} rounded={5}><Link href="https://github.com/sakshi10393/brisk-smash-9621" color={"white"} textDecoration="none">GitHub</Link></Button>
+                    <Button className="project-deployed-link" bg="black" border="none" p={5} rounded={5}><Link href="https://joyful-valkyrie-7a303c.netlify.app/" color={"white"} textDecoration="none">Deployment</Link></Button>
                 </HStack>
                 </Box>
 
-                <Box className="project-card" border="1px solid red" p={30}>
+                <Box className="project-card" p={30} boxShadow = "0px 5px 15px #1DA1F2" rounded={5}>
                 <HStack w={700}>
                <Box>
                   <Text className="project-title">Myntra Clone</Text>
                   <Text className="project-description">Myntra is a major Indian fashion e-commerce company headquartered in Bengaluru, India</Text>
-                  <HStack class="project-tech-stack">
-                    <Button>HTML</Button>
-                    <Button>CSS</Button>
-                    <Button>JavaScript</Button>
-                  </HStack>
+                  <SimpleGrid class="project-tech-stack" columns={3} gap={10}>
+                    <Button className="button-style">HTML</Button>
+                    <Button className="button-style">CSS</Button>
+                    <Button className="button-style">JavaScript</Button>
+                  </SimpleGrid>
                </Box>
-               <Box>
+               <Box transition="transform 5s" _hover={{ transform: "scale(1.2)"}}>
                  <Image src={myntra} width={400}  alt='mytntraWeb' />
                </Box>
                </HStack>
                 <HStack>
-                    <Button className="project-github-link"><Link href="https://github.com/sharunnd/soft-jelly-7030">GitHub</Link></Button>
-                    <Button className="project-deployed-link"><Link href="https://cheery-melba-acacca.netlify.app/">Deployment</Link></Button>
+                    <Button className="project-github-link" bg="black" border="none" p={5} rounded={5}><Link href="https://github.com/sharunnd/soft-jelly-7030" color={"white"} textDecoration="none">GitHub</Link></Button>
+                    <Button className="project-deployed-link" bg="black" border="none" p={5} rounded={5}><Link href="https://cheery-melba-acacca.netlify.app/" color={"white"} textDecoration="none">Deployment</Link></Button>
                 </HStack>
                 </Box>
 
-                <Box className="project-card">
+                <Box className="project-card" p={30} boxShadow = "0px 5px 15px #1DA1F2" rounded={5}>
                 <HStack w={700}>
                <Box>
-                  <Text className="project-title"></Text>
-                  <Text className="project-description"></Text>
-                  <HStack class="project-tech-stack">
-                  </HStack>
+                  <Text className="project-title">Myntra Clone</Text>
+                  <Text className="project-description">Myntra is a major Indian fashion e-commerce company headquartered in Bengaluru, India</Text>
+                  <SimpleGrid class="project-tech-stack" columns={3} gap={10}>
+                    <Button className="button-style">HTML</Button>
+                    <Button className="button-style">CSS</Button>
+                    <Button className="button-style">JavaScript</Button>
+                  </SimpleGrid>
+               </Box>
+               <Box transition="transform 5s" _hover={{ transform: "scale(1.2)"}}>
+                 <Image src={myntra} width={400}  alt='mytntraWeb' />
                </Box>
                </HStack>
+                <HStack>
+                    <Button className="project-github-link" bg="black" border="none" p={5} rounded={5}><Link href="https://github.com/sharunnd/soft-jelly-7030" color={"white"} textDecoration="none">GitHub</Link></Button>
+                    <Button className="project-deployed-link" bg="black" border="none" p={5} rounded={5}><Link href="https://cheery-melba-acacca.netlify.app/" color={"white"} textDecoration="none">Deployment</Link></Button>
+                </HStack>
                 </Box>
             </VStack>
             

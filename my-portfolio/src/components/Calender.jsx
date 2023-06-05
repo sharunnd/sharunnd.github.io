@@ -6,7 +6,7 @@ export function Calender(){
   
     return (
         <Box className="react-activity-calendar">
-        <Heading ml={50}>Github Calender</Heading>
+        <Heading ml={50} mt={50}>Github Calender</Heading>
         <Center mt={50}>
         <GithubCalendar
           username="sharunnd"
@@ -25,7 +25,7 @@ export function Calender(){
           }}
         />
         </Center>
-        <Heading ml={50}>Github Stats</Heading> 
+        <Heading ml={50} mt={50}>Github Stats</Heading> 
         <SimpleGrid columns={3} textAlign={"center"} alignItems={"center"} spacing={30}>    
             <Box >
               <Image id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=sharunnd&hide=contribs,prs" width="100%"/>

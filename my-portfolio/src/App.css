@@ -16,3 +16,10 @@
 #home{
   margin-bottom: 100px;
 }
+
+.button-style {
+  background-color: #1DA1F2;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
