@@ -12,7 +12,7 @@ export function About(){
             <Heading ml={50}>About</Heading>
    
             <Box w="60%" margin={"auto"} bg="#e2e9ed" p='30' rounded={10}>
-            <Text id="user-detail-intro">A passionate full-stack web developer with expertise in React, NodeJs and a strong
+            <Text id="user-detail-intro">A passionate full-stack web developer with expertise in HTML, CSS, JavaScript, React, Node.js and a strong
              background in building scalable and high-performance web applications.
             </Text>
             <Text>
