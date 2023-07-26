@@ -26,6 +26,26 @@
   padding: 5px;
 }
 
+#projects{
+  background-color: #EDF2F7;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.projects-card {
+  animation: fadeIn 1s ease-out;
+}
+
+
 /* Media query for smaller screens */
 @media screen and (max-width: 768px) {
   #home {

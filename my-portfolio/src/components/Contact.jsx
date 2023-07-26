@@ -9,7 +9,7 @@ export function Contact(){
     return (
         <Element  name="contactSection" id="contact">
             <Box bg="#1DA1F2" height={500} textAlign={"center"}>
-               <Text fontSize={30} fontWeight={700} pt={50}>Contact</Text>
+               <Text as="h1" fontSize={{ base: "xl", md: "3xl", lg: "4xl" }} color="black" mb={{ base: 5, md: 10, lg: 50 }} fontWeight={700} pt={50}>Contact</Text>
                <Text  id="contact-phone" fontSize={20}>Phone: +91-7356595601</Text>
                <Text id="contact-email" fontSize={20}>Email: sharunnd11@gmail.com</Text>
                <Text id="addres" fontSize={20}>Address: Ernakulam, Kerala</Text>
