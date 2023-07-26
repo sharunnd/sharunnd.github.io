@@ -12,7 +12,7 @@ export function About() {
         <Heading as="h1" size="xl" color="white" mb={2}>
           About
         </Heading>
-        <Heading as="h1" size="xl" color="black" mb={{ base: 5, md: 10, lg: 50 }}>
+        <Heading as="h1" fontSize={{ base: "xl", md: "3xl", lg: "4xl" }} color="black" mb={{ base: 5, md: 10, lg: 50 }}>
           About
         </Heading>
       </Box>

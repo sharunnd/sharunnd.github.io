@@ -7,7 +7,7 @@ export function Calender() {
       <Heading textAlign="center" fontSize={{ base: "xl", md: "3xl", lg: "4xl" }} mb={5}>
         Github Calendar
       </Heading>
-      <Center>
+      <Center p={{ base: 5, md: 10 }}>
         <GithubCalendar
           username="sharunnd"
           responsive
@@ -28,7 +28,7 @@ export function Calender() {
       <Heading textAlign="center" fontSize={{ base: "xl", md: "3xl", lg: "4xl" }} mt={10} mb={5}>
         Github Stats
       </Heading>
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} textAlign="center" alignItems="center" spacing={10}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} textAlign="center" alignItems="center" spacing={10} p={{ base: 5, md: 10 }}>
         <Box>
           <Image
             id="github-stats-card"
