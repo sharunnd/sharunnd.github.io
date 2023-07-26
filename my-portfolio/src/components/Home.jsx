@@ -3,110 +3,91 @@ import {
   Text,
   Image,
   HStack,
-  baseTheme,
   Link,
   IconButton,
-  Center,
+  Flex,
 } from "@chakra-ui/react";
 import { Element } from "react-scroll";
 import profilePic from "../images/profile-pic.jpg";
-import { backInOut } from "framer-motion";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiOutlineLinkedin,
-} from "react-icons/ai";
+import { AiFillGithub, AiOutlineLinkedin } from "react-icons/ai";
 import TypeWriterEffect from "react-typewriter-effect";
 
 export function Home() {
+  const fontSize = {
+    base: "20px", // Adjust the base font size as needed
+    md: "30px",   // Adjust the medium screen font size as needed
+    lg: "40px",   // Adjust the large screen font size as needed
+  };
   return (
     <Element name="homeSection" id="home">
-      {/* <Box  color={"white"}>Home</Box> */}
-      <HStack width={"100%"} border={"1px solid red"}>
+      <Flex
+        width="100%"
+        direction={{ base: "column", lg: "row" }} // Stack on base, row on large screens
+        justifyContent="space-between"
+        alignItems={"center"} // Center vertically on base, flex-start on large screens
+        padding={{ base: "10%",sm:"20%", md: "10%", lg: "10%" }}
+        // border="1px solid green"
+        pt={{base:"25%"}}
+      >
         <Box
-          width="500px"
-          justifyContent={{ base: "flex-start", md: "center" }}
-          marginLeft={{ base: 0, md: "auto" }}
+          width={{ base: "100%", md: "80%", lg: "50%" }}
+          textAlign={{ md: "left" }}
           boxShadow="xs"
           borderRadius="10px"
           bg="#e2e9ed"
-          padding={30}
-          border={"1px solid black"}
+          p={{ base: 6, md: 8 }}
+          // border="1px solid red"
         >
-          <Text fontSize={30} fontWeight={700} color={"#1DA1F2"}>
+          <Text fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }} fontWeight={700} color="#100f0f">
             Hi, I'm
           </Text>
-          <Text
-            id="user-detail-name"
-            fontSize={30}
-            fontWeight={700}
-            color={"#1DA1F2"}
-            lineHeight={0}
-          >
+          <Text fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }} fontWeight={700} color="#1DA1F2">
             Sharun N D
           </Text>
-          {/* <Text fontSize={30} fontWeight={700} color={"#1DA1F2"}>Full Stack Web Developer</Text> */}
-          <TypeWriterEffect
-            textStyle={{ color: "#1DA1F2" }}
-            startDelay={100}
-            cursorColor="#1DA1F2"
-            text="Full Stack Web Developer"
-            typeSpeed={100}
-            loop={true}
-          />
-          <Text id="user-detail-intro" fontSize={18} color="#444c61">
-            A full-stack web developer who's passionate about turning ideas into
-            reality. I'm dedicated to delivering high-quality products that are
-            both visually stunning and highly functional.
+          <Box
+            
+              color= "#1DA1F2"
+              fontSize= { {base: fontSize.base, md: fontSize.md, lg: fontSize.lg }}
+          >
+            <TypeWriterEffect
+              startDelay={100}
+              cursorColor="#1DA1F2"
+              text="Full Stack Web Developer"
+              typeSpeed={100}
+              loop={true}
+            />
+          </Box>
+          <Text fontSize={{ base: 16, md: 18 }} color="#444c61">
+            A full-stack web developer who's passionate about turning ideas into reality.
+            I'm dedicated to delivering high-quality products that are both visually stunning
+            and highly functional.
           </Text>
-          <HStack>
-            <Box
-              borderRadius={6}
-              bg={"#e2e9ed"}
-              boxSize={40}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Link href="https://github.com/sharunnd">
-                <IconButton
-                  border={"none"}
-                  bg={"#e2e9ed"}
-                  icon={<AiFillGithub />}
-                  fontSize={20}
-                />
-              </Link>
-            </Box>
-            <Box
-              borderRadius={6}
-              bg={"#e2e9ed"}
-              boxSize={40}
-              display={"flex"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Link href="https://www.linkedin.com/in/sharun-n-d-8351191b3/">
-                <IconButton
-                  border={"none"}
-                  fontSize={20}
-                  bg={"#e2e9ed"}
-                  icon={<AiOutlineLinkedin />}
-                />
-              </Link>
-            </Box>
+          <HStack spacing={4}>
+            <Link href="https://github.com/sharunnd">
+              <IconButton bg="#e2e9ed" _hover={{bg:"#51b4f2"}} icon={<AiFillGithub />} fontSize={20} />
+            </Link>
+            <Link href="https://www.linkedin.com/in/sharun-n-d-8351191b3/">
+              <IconButton bg="#e2e9ed" _hover={{bg:"#51b4f2"}} icon={<AiOutlineLinkedin />} fontSize={20} />
+            </Link>
           </HStack>
         </Box>
-        <Box borderRadius="10px" border={"1px solid blue"}>
+        <Box
+          marginTop={{ base: 4, lg: 0 }}
+          borderRadius="10px"
+          // border="1px solid blue"
+          width={{ base: "100%", lg: "45%" }} // Full width on base, 45% width on large screens
+          display="flex"
+          justifyContent="center"
+        >
           <Image
             src={profilePic}
             className="home-img"
-            ml={100}
             borderRadius="10px"
-            boxSize="150px"
+            boxSize={{ base: "150px", md: "180px", lg: "150px" }} // image size for different screens
             alt="sharun"
           />
         </Box>
-      </HStack>
+      </Flex>
     </Element>
   );
 }

@@ -8,13 +8,15 @@
 
 .nav-link{
 
-  margin-right: 20px;
+  margin-right: 10px;
 
 }
 
 
 #home{
   margin-bottom: 100px;
+  width: 100%;
+  /* border: 1px solid red; */
 }
 
 .button-style {
@@ -22,4 +24,17 @@
   border: none;
   border-radius: 5px;
   padding: 5px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  #home {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #home {
+    margin-bottom: 0px;
+  }
 }
