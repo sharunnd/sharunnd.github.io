@@ -91,7 +91,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -105,7 +105,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -153,7 +153,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -167,7 +167,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -215,7 +215,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -229,7 +229,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -276,7 +276,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -290,7 +290,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -338,7 +338,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -352,7 +352,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -401,7 +401,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -415,7 +415,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" }}
+                  _hover={{ bg: "#1DA1F2" , color:"white"}}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
