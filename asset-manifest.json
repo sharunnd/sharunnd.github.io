@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.9ff2a4cf.css",
-    "main.js": "/static/js/main.179f9ac1.js",
+    "main.css": "/static/css/main.b86dbb63.css",
+    "main.js": "/static/js/main.eacca8aa.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/innov8x.png": "/static/media/innov8x.7daeef0d3beee86f08ca.png",
+    "static/media/buycar.png": "/static/media/buycar.fb3d00d58ee2d1fd03d7.png",
     "static/media/bewakoof-homepage.png": "/static/media/bewakoof-homepage.e499dcaa87594c034a9c.png",
     "static/media/rentomojoHomePage.png": "/static/media/rentomojoHomePage.e9623a71cedc4500466f.png",
+    "static/media/petconnects.png": "/static/media/petconnects.763bf1d943fdf5b30301.png",
     "static/media/myntra.png": "/static/media/myntra.f29771f800a9d011fd5e.png",
     "static/media/redux.png": "/static/media/redux.1b4bb5fceb01b19da59d.png",
     "static/media/chakraui.png": "/static/media/chakraui.e4cb472ccaabf22affba.png",
@@ -19,12 +22,12 @@
     "static/media/css.png": "/static/media/css.69a82c2d9e45c933a9cb.png",
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
-    "main.9ff2a4cf.css.map": "/static/css/main.9ff2a4cf.css.map",
-    "main.179f9ac1.js.map": "/static/js/main.179f9ac1.js.map",
+    "main.b86dbb63.css.map": "/static/css/main.b86dbb63.css.map",
+    "main.eacca8aa.js.map": "/static/js/main.eacca8aa.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9ff2a4cf.css",
-    "static/js/main.179f9ac1.js"
+    "static/css/main.b86dbb63.css",
+    "static/js/main.eacca8aa.js"
   ]
 }
