@@ -64,10 +64,10 @@ export function Home() {
           </Text>
           <HStack spacing={4} mt={2}>
             <Link href="https://github.com/sharunnd" target="_blank" rel="noopener noreferrer">
-              <IconButton bg="#EDF2F7" _hover={{bg:"#1DA1F2"}} icon={<AiFillGithub />} fontSize={20} rounded={"50%"}/>
+              <IconButton bg="#EDF2F7" _hover={{bg:"#1DA1F2", color:"white"}} icon={<AiFillGithub />} fontSize={20} rounded={"50%"}/>
             </Link>
             <Link href="https://www.linkedin.com/in/sharun-n-d-8351191b3/" target="_blank" rel="noopener noreferrer">
-              <IconButton bg="#EDF2F7" _hover={{bg:"#1DA1F2"}} icon={<AiOutlineLinkedin />} fontSize={20} rounded={"50%"}/>
+              <IconButton bg="#EDF2F7" _hover={{bg:"#1DA1F2", color:"white"}} icon={<AiOutlineLinkedin />} fontSize={20} rounded={"50%"}/>
             </Link>
           </HStack>
         </Box>
