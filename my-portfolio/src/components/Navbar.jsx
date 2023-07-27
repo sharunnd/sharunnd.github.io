@@ -28,7 +28,7 @@
 //   export default Navbar;
 
 import { useEffect, useState } from "react";
-import { Button, Flex, Spacer, useDisclosure } from "@chakra-ui/react";
+import { Button, Flex, Heading, Spacer, useDisclosure } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import "../App.css";
 import { handleResume } from "../resume";
@@ -67,6 +67,10 @@ function Navbar() {
       right={0}
       zIndex={10}
     >
+      <Heading as="h1" size="lg" ml={4} mr={"auto"}>
+        Sharun
+      </Heading>
+      
       {isSmScreen ? (
         <>
           <Button

@@ -34,11 +34,11 @@ export function Home() {
           textAlign={{ md: "left" }}
           boxShadow="xs"
           borderRadius="10px"
-          bg="#e2e9ed"
+          bg="#EDF2F7"
           p={{ base: 6, md: 8 }}
           // border="1px solid red"
         >
-          <Text fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }} fontWeight={700} color="#100f0f">
+          <Text fontFamily={"initial"} fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }} fontWeight={700} color="#100f0f">
             Hi, I'm
           </Text>
           <Text fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }} fontWeight={700} color="#1DA1F2">
@@ -57,17 +57,17 @@ export function Home() {
               loop={true}
             />
           </Box>
-          <Text fontSize={{ base: 16, md: 18 }} color="#444c61">
+          <Text fontSize={{ base: 16, md: 18 }} color="#444c61" mt={2}>
             A full-stack web developer who's passionate about turning ideas into reality.
             I'm dedicated to delivering high-quality products that are both visually stunning
             and highly functional.
           </Text>
-          <HStack spacing={4}>
-            <Link href="https://github.com/sharunnd">
-              <IconButton bg="#e2e9ed" _hover={{bg:"#1DA1F2"}} icon={<AiFillGithub />} fontSize={20} rounded={"50%"}/>
+          <HStack spacing={4} mt={2}>
+            <Link href="https://github.com/sharunnd" target="_blank" rel="noopener noreferrer">
+              <IconButton bg="#EDF2F7" _hover={{bg:"#1DA1F2"}} icon={<AiFillGithub />} fontSize={20} rounded={"50%"}/>
             </Link>
-            <Link href="https://www.linkedin.com/in/sharun-n-d-8351191b3/">
-              <IconButton bg="#e2e9ed" _hover={{bg:"#1DA1F2"}} icon={<AiOutlineLinkedin />} fontSize={20} rounded={"50%"}/>
+            <Link href="https://www.linkedin.com/in/sharun-n-d-8351191b3/" target="_blank" rel="noopener noreferrer">
+              <IconButton bg="#EDF2F7" _hover={{bg:"#1DA1F2"}} icon={<AiOutlineLinkedin />} fontSize={20} rounded={"50%"}/>
             </Link>
           </HStack>
         </Box>
