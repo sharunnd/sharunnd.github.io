@@ -205,7 +205,6 @@ export function Project() {
                 HTML, CSS, JavaScript, React, Chackra UI, Node.js, Express, MongoDB
               </Text>
             </Box>
-            {/* HTML,CSS,JavaScript,React,Chackra UI,Node.js,Express,MongoDB */}
             <Flex mt={5} justifyContent={"center"}>
               <Link
                 href="https://github.com/lokendra0905/loud-weight-1875"
@@ -391,7 +390,6 @@ export function Project() {
                 HTML, CSS, JavaScript
               </Text>
             </Box>
-            {/* HTML,CSS,JavaScript,React,Chackra UI,Node.js,Express,MongoDB */}
             <Flex mt={5} justifyContent={"center"}>
               <Link
                 href="https://github.com/sakshi10393/brisk-smash-9621"
