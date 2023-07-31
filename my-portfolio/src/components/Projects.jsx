@@ -114,6 +114,8 @@ export function Project() {
             </Flex>
           </Box>
 
+          {/* Project Card 2 */}
+           
           <Box
             className="project-card"
             p={10}
@@ -175,6 +177,7 @@ export function Project() {
               </Link>
             </Flex>
           </Box>
+          {/* Project Card 3 */}
 
           <Box
             className="project-card"
@@ -237,6 +240,8 @@ export function Project() {
             </Flex>
           </Box>
 
+          {/* Project Card 4 */}
+
           <Box
             className="project-card"
             p={10}
@@ -297,6 +302,8 @@ export function Project() {
               </Link>
             </Flex>
           </Box>
+
+          {/* Project Card 5 */}
 
           <Box
             className="project-card"
@@ -360,6 +367,8 @@ export function Project() {
             </Flex>
           </Box>
           
+          {/* Project Card 6 */}
+
           <Box
             className="project-card"
             p={10}
