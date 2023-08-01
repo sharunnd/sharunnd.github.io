@@ -15,8 +15,8 @@ import TypeWriterEffect from "react-typewriter-effect";
 export function Home() {
   const fontSize = {
     base: "20px", // Adjust the base font size as needed
-    md: "30px",   // Adjust the medium screen font size as needed
-    lg: "40px",   // Adjust the large screen font size as needed
+    md: "30px", // Adjust the medium screen font size as needed
+    lg: "40px", // Adjust the large screen font size as needed
   };
   return (
     <Element name="homeSection" id="home">
@@ -25,9 +25,9 @@ export function Home() {
         direction={{ base: "column", lg: "row" }} // Stack on base, row on large screens
         justifyContent="space-between"
         alignItems={"center"} // Center vertically on base, flex-start on large screens
-        padding={{ base: "10%",sm:"20%", md: "10%", lg: "10%" }}
+        padding={{ base: "10%", sm: "20%", md: "10%", lg: "10%" }}
         // border="1px solid green"
-        pt={{base:"25%"}}
+        pt={{ base: "25%" }}
       >
         <Box
           width={{ base: "100%", md: "80%", lg: "50%" }}
@@ -38,16 +38,24 @@ export function Home() {
           p={{ base: 6, md: 8 }}
           // border="1px solid red"
         >
-          <Text fontFamily={"initial"} fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }} fontWeight={700} color="#100f0f">
+          <Text
+            fontFamily={"initial"}
+            fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }}
+            fontWeight={700}
+            color="#100f0f"
+          >
             Hi, I'm
           </Text>
-          <Text fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }} fontWeight={700} color="#1DA1F2">
+          <Text
+            fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }}
+            fontWeight={700}
+            color="#1DA1F2"
+          >
             Sharun N D
           </Text>
           <Box
-            
-              color= "#1DA1F2"
-              fontSize= { {base: fontSize.base, md: fontSize.md, lg: fontSize.lg }}
+            color="#1DA1F2"
+            fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }}
           >
             <TypeWriterEffect
               startDelay={100}
@@ -58,16 +66,36 @@ export function Home() {
             />
           </Box>
           <Text fontSize={{ base: 16, md: 18 }} color="#444c61" mt={2}>
-            A full-stack web developer who's passionate about turning ideas into reality.
-            I'm dedicated to delivering high-quality products that are both visually stunning
-            and highly functional.
+            A full-stack web developer who's passionate about turning ideas into
+            reality. I'm dedicated to delivering high-quality products that are
+            both visually stunning and highly functional.
           </Text>
           <HStack spacing={4} mt={2}>
-            <Link href="https://github.com/sharunnd" target="_blank" rel="noopener noreferrer">
-              <IconButton bg="#EDF2F7" _hover={{bg:"#1DA1F2", color:"white"}} icon={<AiFillGithub />} fontSize={20} rounded={"50%"}/>
+            <Link
+              href="https://github.com/sharunnd"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton
+                bg="#EDF2F7"
+                _hover={{ bg: "#1DA1F2", color: "white" }}
+                icon={<AiFillGithub />}
+                fontSize={20}
+                rounded={"50%"}
+              />
             </Link>
-            <Link href="https://www.linkedin.com/in/sharun-n-d-8351191b3/" target="_blank" rel="noopener noreferrer">
-              <IconButton bg="#EDF2F7" _hover={{bg:"#1DA1F2", color:"white"}} icon={<AiOutlineLinkedin />} fontSize={20} rounded={"50%"}/>
+            <Link
+              href="https://www.linkedin.com/in/sharun-n-d-8351191b3/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconButton
+                bg="#EDF2F7"
+                _hover={{ bg: "#1DA1F2", color: "white" }}
+                icon={<AiOutlineLinkedin />}
+                fontSize={20}
+                rounded={"50%"}
+              />
             </Link>
           </HStack>
         </Box>

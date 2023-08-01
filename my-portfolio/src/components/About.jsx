@@ -12,12 +12,22 @@ export function About() {
         <Heading as="h1" size="xl" color="white" mb={2}>
           About
         </Heading>
-        <Heading as="h1" fontSize={{ base: "xl", md: "3xl", lg: "4xl" }} color="black" mb={{ base: 5, md: 10, lg: 50 }}>
+        <Heading
+          as="h1"
+          fontSize={{ base: "xl", md: "3xl", lg: "4xl" }}
+          color="black"
+          mb={{ base: 5, md: 10, lg: 50 }}
+        >
           About
         </Heading>
       </Box>
 
-      <HStack w="100%" maxW={{ base: "80%", md: "60%" }} mx="auto" spacing={{ base: 4, md: 8 }}>
+      <HStack
+        w="100%"
+        maxW={{ base: "80%", md: "60%" }}
+        mx="auto"
+        spacing={{ base: 4, md: 8 }}
+      >
         {/* Image hidden on md and base screen sizes */}
         <Box
           display={{ base: "none", md: "block" }}
@@ -28,21 +38,38 @@ export function About() {
           <Image src={aboutimg} alt="" borderRadius="50%" />
         </Box>
 
-        <Box bg="white" w={{ base: "100%", lg: "100%" }} p={{ base: 6, md: 6 }} rounded={10}>
+        <Box
+          bg="white"
+          w={{ base: "100%", lg: "100%" }}
+          p={{ base: 6, md: 6 }}
+          rounded={10}
+        >
           <ul style={{ listStyleType: "disc", listStylePosition: "outside" }}>
             <li>
-              <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} id="user-detail-intro" mb={{ base: 2, lg: 5 }}>
-                A passionate full-stack web developer with expertise in HTML, CSS, JavaScript, React, Node.js, and a strong background in building scalable and high-performance web applications.
+              <Text
+                fontSize={{ base: "sm", md: "md", lg: "lg" }}
+                id="user-detail-intro"
+                mb={{ base: 2, lg: 5 }}
+              >
+                A passionate full-stack web developer with expertise in HTML,
+                CSS, JavaScript, React, Node.js, and a strong background in
+                building scalable and high-performance web applications.
               </Text>
             </li>
             <li>
-              <Text fontSize={{ base: "sm", md: "md", lg: "lg" }} mb={{ base: 2, lg: 5 }}>
-                I hold a BTech degree in Instrumentation and Control Engineering, equipping me with a strong foundation in engineering principles and problem-solving.
+              <Text
+                fontSize={{ base: "sm", md: "md", lg: "lg" }}
+                mb={{ base: 2, lg: 5 }}
+              >
+                I hold a BTech degree in Instrumentation and Control
+                Engineering, equipping me with a strong foundation in
+                engineering principles and problem-solving.
               </Text>
             </li>
             <li>
               <Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
-                I am enthusiastic about joining a team that fosters continuous learning and allowing me to expand my skills and knowledge.
+                I am enthusiastic about joining a team that fosters continuous
+                learning and allowing me to expand my skills and knowledge.
               </Text>
             </li>
           </ul>

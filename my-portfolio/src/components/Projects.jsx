@@ -16,9 +16,9 @@ import bewkoofHomePage from "../images/bewakoof-homepage.png";
 import rentomojoHomePage from "../images/rentomojoHomePage.png";
 import myntra from "../images/myntra.png";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
-import buycar from "../images/buycar.png"
-import petconnects from "../images/petconnects.png"
-import innov8X from "../images/innov8x.png"
+import buycar from "../images/buycar.png";
+import petconnects from "../images/petconnects.png";
+import innov8X from "../images/innov8x.png";
 
 export function Project() {
   const buttonStyle = {
@@ -75,10 +75,10 @@ export function Project() {
               Bewakoof is an online fashion and lifestyle E-commerce website
             </Text>
             <Box mt={2}>
-              <Text color={"#1DA1F2"} display= "inline" fontWeight={500}>
+              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
                 Tech stack:
               </Text>
-              <Text display= "inline" ml={1} >
+              <Text display="inline" ml={1}>
                 HTML, CSS, JavaScript, React, Chackra UI
               </Text>
             </Box>
@@ -91,7 +91,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -105,7 +105,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -115,7 +115,7 @@ export function Project() {
           </Box>
 
           {/* Project Card 2 */}
-           
+
           <Box
             className="project-card"
             p={10}
@@ -138,11 +138,12 @@ export function Project() {
               BUYC Corp is a marketplace for second-hand cars.
             </Text>
             <Box mt={2}>
-              <Text color={"#1DA1F2"} display= "inline" fontWeight={500}>
+              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
                 Tech stack:
               </Text>
-              <Text display= "inline" ml={1} >
-                HTML, CSS, JavaScript, React, Chackra UI, Node.js, Express, MongoDB
+              <Text display="inline" ml={1}>
+                HTML, CSS, JavaScript, React, Chackra UI, Node.js, Express,
+                MongoDB
               </Text>
             </Box>
             {/* HTML,CSS,JavaScript,React,Chackra UI,Node.js,Express,MongoDB */}
@@ -155,7 +156,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -169,7 +170,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -198,14 +199,15 @@ export function Project() {
               Petconnects
             </Text>
             <Text className="project-description" mt={2}>
-            PetConnects allows users to adopt pets and send them to shelters
+              PetConnects allows users to adopt pets and send them to shelters
             </Text>
             <Box mt={2}>
-              <Text color={"#1DA1F2"} display= "inline" fontWeight={500}>
+              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
                 Tech stack:
               </Text>
-              <Text display= "inline" ml={1} >
-                HTML, CSS, JavaScript, React, Chackra UI, Node.js, Express, MongoDB
+              <Text display="inline" ml={1}>
+                HTML, CSS, JavaScript, React, Chackra UI, Node.js, Express,
+                MongoDB
               </Text>
             </Box>
             <Flex mt={5} justifyContent={"center"}>
@@ -217,7 +219,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -231,7 +233,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -264,11 +266,12 @@ export function Project() {
               It is an online GPT-bot for interview preparation
             </Text>
             <Box mt={2}>
-              <Text color={"#1DA1F2"} display= "inline" fontWeight={500}>
+              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
                 Tech stack:
               </Text>
-              <Text display= "inline" ml={1} >
-                HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express, MongoDB
+              <Text display="inline" ml={1}>
+                HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express,
+                MongoDB
               </Text>
             </Box>
             <Flex mt={5} justifyContent={"center"}>
@@ -280,7 +283,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -294,7 +297,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -328,10 +331,10 @@ export function Project() {
               in Bengaluru, India
             </Text>
             <Box mt={2}>
-              <Text color={"#1DA1F2"} display= "inline" fontWeight={500}>
+              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
                 Tech stack:
               </Text>
-              <Text display= "inline" ml={1} >
+              <Text display="inline" ml={1}>
                 HTML, CSS, JavaScript
               </Text>
             </Box>
@@ -344,7 +347,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -358,7 +361,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -366,7 +369,7 @@ export function Project() {
               </Link>
             </Flex>
           </Box>
-          
+
           {/* Project Card 6 */}
 
           <Box
@@ -392,10 +395,10 @@ export function Project() {
               furniture, appliances and other household items
             </Text>
             <Box mt={2}>
-              <Text color={"#1DA1F2"} display= "inline" fontWeight={500}>
+              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
                 Tech stack:
               </Text>
-              <Text display= "inline" ml={1} >
+              <Text display="inline" ml={1}>
                 HTML, CSS, JavaScript
               </Text>
             </Box>
@@ -408,7 +411,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillGithub />}
                   fontSize={20}
                   rounded={"50%"}
@@ -422,7 +425,7 @@ export function Project() {
               >
                 <IconButton
                   bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2" , color:"white"}}
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
                   icon={<AiFillEye />}
                   fontSize={20}
                   rounded={"50%"}
@@ -430,7 +433,6 @@ export function Project() {
               </Link>
             </Flex>
           </Box>
-        
         </SimpleGrid>
       </VStack>
     </Element>
