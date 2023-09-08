@@ -19,6 +19,7 @@ import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import buycar from "../images/buycar.png";
 import petconnects from "../images/petconnects.png";
 import innov8X from "../images/innov8x.png";
+import reciperadar from "../images/reciperadar_img.png";
 
 export function Project() {
   const buttonStyle = {
@@ -53,6 +54,68 @@ export function Project() {
         >
           {/* Project Card 1 */}
 
+          <Box
+            className="project-card"
+            p={10}
+            boxShadow="md"
+            _hover={{ boxShadow: "0px 5px 15px #adaeaf" }}
+            rounded="xl"
+            bg="white"
+          >
+            <Box
+              mb={5}
+              transition="transform 5s"
+              _hover={{ transform: "scale(1.2)" }}
+            >
+              <Image src={reciperadar} width={400} alt="" />
+            </Box>
+            <Text className="project-title" fontSize={20} fontWeight={700}>
+              RecipeRadar
+            </Text>
+            <Text className="project-description" mt={2}>
+            RecipeRadar leverages generative AI to curate a personalized cooking experience
+            </Text>
+            <Box mt={2}>
+              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
+                Tech stack:
+              </Text>
+              <Text display="inline" ml={1}>
+                HTML, CSS, JavaScript, Python, OpenAI, Django,Vue.js, MySQL, Tailwind CSS
+              </Text>
+            </Box>
+            <Flex mt={5} justifyContent={"center"}>
+              <Link
+                href="https://github.com/sharunnd/recipe-radar"
+                target="_blank"
+                rel="noopener noreferrer"
+                mx={5}
+              >
+                <IconButton
+                  bg="#e2e9ed"
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
+                  icon={<AiFillGithub />}
+                  fontSize={20}
+                  rounded={"50%"}
+                />
+              </Link>
+              <Link
+                href="https://youtu.be/M8S_KqjZt6c"
+                target="_blank"
+                rel="noopener noreferrer"
+                mx={5}
+              >
+                <IconButton
+                  bg="#e2e9ed"
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
+                  icon={<AiFillEye />}
+                  fontSize={20}
+                  rounded={"50%"}
+                />
+              </Link>
+            </Flex>
+          </Box>
+
+          {/* Project Card 2 */}
           <Box
             className="project-card"
             p={10}
@@ -113,9 +176,7 @@ export function Project() {
               </Link>
             </Flex>
           </Box>
-
-          {/* Project Card 2 */}
-
+          {/* Project Card 3 */}
           <Box
             className="project-card"
             p={10}
@@ -270,7 +331,7 @@ export function Project() {
                 Tech stack:
               </Text>
               <Text display="inline" ml={1}>
-                HTML, CSS, JavaScript, React, Tailwind CSS, Node.js, Express,
+                HTML, CSS, JavaScript, OpenAI, React, Tailwind CSS, Node.js, Express,
                 MongoDB
               </Text>
             </Box>
