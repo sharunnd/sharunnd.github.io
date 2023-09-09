@@ -34,7 +34,9 @@ export function Project() {
     <Element name="projectSection" id="projects">
       <VStack spacing={25} align="center">
         <Box textAlign="center" mb={{ base: 8, md: 0 }}>
+
           {/* Heading with responsive font sizes */}
+
           <Heading as="h1" size="xl" color="#EDF2F7" mb={2}>
             Projects
           </Heading>
@@ -47,6 +49,7 @@ export function Project() {
             Projects
           </Heading>
         </Box>
+        
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 3 }}
           gap={{ base: 10, md: 50, lg: 50 }}
@@ -81,7 +84,7 @@ export function Project() {
                 Tech stack:
               </Text>
               <Text display="inline" ml={1}>
-                HTML, CSS, JavaScript, Python, OpenAI API, Django,Vue.js, MySQL, Tailwind CSS
+                HTML, CSS, JavaScript, Python, OpenAI API, Django, Vue.js, MySQL, Tailwind CSS
               </Text>
             </Box>
             <Flex mt={5} justifyContent={"center"}>

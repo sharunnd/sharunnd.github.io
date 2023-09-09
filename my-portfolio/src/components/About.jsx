@@ -61,7 +61,7 @@ export function About() {
                 fontSize={{ base: "sm", md: "md", lg: "lg" }}
                 mb={{ base: 2, lg: 5 }}
               >
-                I hold a BTech degree in Instrumentation and Control
+                I hold a B.Tech degree in Instrumentation and Control
                 Engineering, equipping me with a strong foundation in
                 engineering principles and problem-solving.
               </Text>
