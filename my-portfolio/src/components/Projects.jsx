@@ -533,7 +533,7 @@ export function Project() {
             </Box>
             <Flex mt={5} justifyContent={"center"}>
               <Link
-                href="https://github.com/sakshi10393/brisk-smash-9621"
+                href="https://github.com/sharunnd/rentomojo-clone"
                 target="_blank"
                 rel="noopener noreferrer"
                 mx={5}

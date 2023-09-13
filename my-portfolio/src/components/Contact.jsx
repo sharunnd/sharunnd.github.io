@@ -9,7 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { Element } from "react-scroll";
-import { AiFillGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { AiFillGithub, AiOutlineLinkedin, AiOutlinePhone } from "react-icons/ai";
 import { HiOutlineMail } from "react-icons/hi";
 import { IoLocationOutline } from "react-icons/io5";
 
@@ -40,15 +40,34 @@ export function Contact() {
         >
           <IconButton
             fontSize={20}
-            _hover={{ bg: "#1DA1F2", color: "white" }}
+            _hover={{ bg: "#1DA1F2", color: "black" }}
             rounded={"50%"}
             icon={<HiOutlineMail />}
+            bg={"none"}
+            color={"white"}
           />
           <Text>sharunnd11@gmail.com</Text>
         </Flex>
         <Flex
           gap={3}
-          id="contact-email"
+          id="contact-phone"
+          fontSize={{ base: 18, md: 20 }}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
+          <IconButton
+            fontSize={20}
+            _hover={{ bg: "#1DA1F2", color: "black" }}
+            rounded={"50%"}
+            icon={<AiOutlinePhone />}
+            bg={"none"}
+            color={"white"}
+          />
+          <Text>+91-7356595601</Text>
+        </Flex>
+        <Flex
+          gap={3}
+          id="addres"
           fontSize={{ base: 18, md: 20 }}
           justifyContent={"center"}
           alignItems={"center"}
@@ -56,9 +75,11 @@ export function Contact() {
         >
           <IconButton
             fontSize={20}
-            _hover={{ bg: "#1DA1F2", color: "white" }}
+            _hover={{ bg: "#1DA1F2", color: "black" }}
             rounded={"50%"}
             icon={<IoLocationOutline />}
+            bg={"none"}
+            color={"white"}
           />
           <Text id="addres">Ernakulam, Kerala</Text>
         </Flex>
