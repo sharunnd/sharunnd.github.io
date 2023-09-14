@@ -1,4 +1,3 @@
-import { useRef } from 'react';
 import './App.css';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
@@ -9,6 +8,7 @@ import { Project } from './components/Projects';
 import { Calender } from './components/Calender';
 import "./custom-scroll-bar.css"
 import { Box } from '@chakra-ui/react';
+import ScrollIcon from './components/ScrollIcon';
 
 function App() {
   
@@ -22,6 +22,7 @@ function App() {
       <Calender />
       <Project />
       <Contact />
+      <ScrollIcon />
     </Box>
   );
 }
