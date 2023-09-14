@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c6126a4a.css",
-    "main.js": "/static/js/main.9fd8dad3.js",
+    "main.js": "/static/js/main.42165638.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/reciperadar_img.png": "/static/media/reciperadar_img.362b7278942e3df95eb0.png",
     "static/media/innov8x.png": "/static/media/innov8x.7daeef0d3beee86f08ca.png",
@@ -25,11 +25,11 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.c6126a4a.css.map": "/static/css/main.c6126a4a.css.map",
-    "main.9fd8dad3.js.map": "/static/js/main.9fd8dad3.js.map",
+    "main.42165638.js.map": "/static/js/main.42165638.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6126a4a.css",
-    "static/js/main.9fd8dad3.js"
+    "static/js/main.42165638.js"
   ]
 }
