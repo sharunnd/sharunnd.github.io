@@ -89,7 +89,7 @@ export function Project() {
             </Box>
             <Flex mt={5} justifyContent={"center"}>
               <Link
-                href="https://github.com/sharunnd/recipe-radar"
+                href="https://github.com/sharunnd/recipe-recommendation-website"
                 target="_blank"
                 rel="noopener noreferrer"
                 mx={5}
@@ -277,7 +277,7 @@ export function Project() {
             </Box>
             <Flex mt={5} justifyContent={"center"}>
               <Link
-                href="https://github.com/sharunnd/petconnects"
+                href="https://github.com/sharunnd/petconnects-pet-adoption-website"
                 target="_blank"
                 rel="noopener noreferrer"
                 mx={5}
