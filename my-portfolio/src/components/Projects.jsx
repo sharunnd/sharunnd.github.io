@@ -48,8 +48,7 @@ export function Project() {
           >
             Projects
           </Heading>
-        </Box>
-        
+        </Box>   
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 3 }}
           gap={{ base: 10, md: 50, lg: 50 }}

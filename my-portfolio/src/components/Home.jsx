@@ -111,7 +111,7 @@ export function Home() {
             src={profilePic}
             className="home-img"
             borderRadius="10px"
-            boxSize={{ base: "150px", md: "180px", lg: "150px" }} // image size for different screens
+            boxSize={{ base: "150px", md: "180px", lg: "190px" }} // image size for different screens
             alt="sharun"
           />
         </Box>
