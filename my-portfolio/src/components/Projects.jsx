@@ -150,7 +150,7 @@ export function Project() {
             </Box>
             <Flex mt={5} justifyContent={"center"}>
               <Link
-                href="https://github.com/sharunnd/towering-grade-7940"
+                href="https://github.com/sharunnd/bewakoof-clone"
                 target="_blank"
                 rel="noopener noreferrer"
                 mx={5}
@@ -180,7 +180,7 @@ export function Project() {
             </Flex>
           </Box>
           {/* Project Card 3 */}
-          <Box
+          {/* <Box
             className="project-card"
             p={10}
             boxShadow="md"
@@ -210,7 +210,7 @@ export function Project() {
                 MongoDB
               </Text>
             </Box>
-            {/* HTML,CSS,JavaScript,React,Chackra UI,Node.js,Express,MongoDB */}
+            
             <Flex mt={5} justifyContent={"center"}>
               <Link
                 href="https://github.com/sharunnd/BUYC_Corp"
@@ -241,7 +241,7 @@ export function Project() {
                 />
               </Link>
             </Flex>
-          </Box>
+          </Box> */}
           {/* Project Card 3 */}
 
           <Box
@@ -340,7 +340,7 @@ export function Project() {
             </Box>
             <Flex mt={5} justifyContent={"center"}>
               <Link
-                href="https://github.com/sharunnd/Innov8X"
+                href="https://github.com/sharunnd/Interview-mentor-ai"
                 target="_blank"
                 rel="noopener noreferrer"
                 mx={5}
@@ -468,7 +468,7 @@ export function Project() {
             </Box>
             <Flex mt={5} justifyContent={"center"}>
               <Link
-                href="https://github.com/sharunnd/soft-jelly-7030"
+                href="https://github.com/sharunnd/myntra-clone"
                 target="_blank"
                 rel="noopener noreferrer"
                 mx={5}
