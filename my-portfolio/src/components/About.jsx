@@ -9,7 +9,7 @@ export function About() {
     <Element name="aboutSection" id="about" className="about section">
       <Box textAlign="center" mb={{ base: 8, md: 0 }}>
         {/* Heading with responsive font sizes */}
-        <Heading as="h1" size="xl" color="white" mb={2}>
+        <Heading as="h1" size="xl" color="white" mb={4}>
           About
         </Heading>
         <Heading

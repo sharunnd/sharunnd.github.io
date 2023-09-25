@@ -96,6 +96,7 @@ function Navbar() {
                 to="skillsSection"
                 smooth={true}
                 duration={500}
+                onClick={onToggle}
               >
                 Skills
               </Link>
@@ -106,6 +107,7 @@ function Navbar() {
                 to="projectSection"
                 smooth={true}
                 duration={500}
+                onClick={onToggle}
               >
                 Projects
               </Link>
@@ -116,6 +118,7 @@ function Navbar() {
                 to="contactSection"
                 smooth={true}
                 duration={500}
+                onClick={onToggle}
               >
                 Contact
               </Link>

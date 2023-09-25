@@ -37,7 +37,7 @@ export function Project() {
 
           {/* Heading with responsive font sizes */}
 
-          <Heading as="h1" size="xl" color="#EDF2F7" mb={2}>
+          <Heading as="h1" size="xl" color="#EDF2F7" mb={4}>
             Projects
           </Heading>
           <Heading
