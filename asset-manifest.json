@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.c6126a4a.css",
-    "main.js": "/static/js/main.823a8c33.js",
+    "main.js": "/static/js/main.aee416d1.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/reciperadar_img.png": "/static/media/reciperadar_img.362b7278942e3df95eb0.png",
     "static/media/innov8x.png": "/static/media/innov8x.7daeef0d3beee86f08ca.png",
     "static/media/buycar.png": "/static/media/buycar.fb3d00d58ee2d1fd03d7.png",
     "static/media/bewakoof-homepage.png": "/static/media/bewakoof-homepage.e499dcaa87594c034a9c.png",
+    "static/media/booking-dot-com.png": "/static/media/booking-dot-com.0511ffce0babfc187b98.png",
     "static/media/rentomojoHomePage.png": "/static/media/rentomojoHomePage.e9623a71cedc4500466f.png",
     "static/media/petconnects.png": "/static/media/petconnects.763bf1d943fdf5b30301.png",
     "static/media/myntra.png": "/static/media/myntra.f29771f800a9d011fd5e.png",
@@ -25,11 +26,11 @@
     "static/media/javascript.png": "/static/media/javascript.1ccd6ef9bb1f9c84ef00.png",
     "index.html": "/index.html",
     "main.c6126a4a.css.map": "/static/css/main.c6126a4a.css.map",
-    "main.823a8c33.js.map": "/static/js/main.823a8c33.js.map",
+    "main.aee416d1.js.map": "/static/js/main.aee416d1.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6126a4a.css",
-    "static/js/main.823a8c33.js"
+    "static/js/main.aee416d1.js"
   ]
 }
