@@ -84,7 +84,8 @@ export function Project() {
                 Tech stack:
               </Text>
               <Text display="inline" ml={1}>
-                HTML, CSS, React, TypeScript, Node.js, Express, MongoDB, Tailwind CSS
+                HTML, CSS, React, TypeScript, Node.js, Express, MongoDB,
+                Tailwind CSS
               </Text>
             </Box>
             <Flex mt={5} justifyContent={"center"}>
@@ -118,7 +119,7 @@ export function Project() {
               </Link>
             </Flex>
           </Box>
-
+          {/* Project Card 2 */}
           <Box
             className="project-card"
             p={10}
@@ -182,7 +183,7 @@ export function Project() {
             </Flex>
           </Box>
 
-          {/* Project Card 2 */}
+          {/* Project Card 3 */}
           <Box
             className="project-card"
             p={10}
@@ -243,69 +244,7 @@ export function Project() {
               </Link>
             </Flex>
           </Box>
-          {/* Project Card 3 */}
-          {/* <Box
-            className="project-card"
-            p={10}
-            boxShadow="md"
-            _hover={{ boxShadow: "0px 5px 15px #adaeaf" }}
-            rounded="xl"
-            bg="white"
-          >
-            <Box
-              mb={5}
-              transition="transform 5s"
-              _hover={{ transform: "scale(1.2)" }}
-            >
-              <Image src={buycar} width={400} alt="buycar" />
-            </Box>
-            <Text className="project-title" fontSize={20} fontWeight={700}>
-              BuyCars
-            </Text>
-            <Text className="project-description" mt={2}>
-              BUYC Corp is a marketplace for second-hand cars.
-            </Text>
-            <Box mt={2}>
-              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
-                Tech stack:
-              </Text>
-              <Text display="inline" ml={1}>
-                HTML, CSS, JavaScript, React, Chackra UI, Node.js, Express,
-                MongoDB
-              </Text>
-            </Box>
-            
-            <Flex mt={5} justifyContent={"center"}>
-              <Link
-                href="https://github.com/sharunnd/BUYC_Corp"
-                target="_blank"
-                rel="noopener noreferrer"
-                mx={5}
-              >
-                <IconButton
-                  bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2", color: "white" }}
-                  icon={<AiFillGithub />}
-                  fontSize={20}
-                  rounded={"50%"}
-                />
-              </Link>
-              <Link
-                href="https://buycars-ten.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                mx={5}
-              >
-                <IconButton
-                  bg="#e2e9ed"
-                  _hover={{ bg: "#1DA1F2", color: "white" }}
-                  icon={<AiFillEye />}
-                  fontSize={20}
-                  rounded={"50%"}
-                />
-              </Link>
-            </Flex>
-          </Box> */}
+          
           {/* Project Card 3 */}
 
           <Box
