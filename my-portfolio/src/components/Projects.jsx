@@ -21,6 +21,7 @@ import petconnects from "../images/petconnects.png";
 import innov8X from "../images/innov8x.png";
 import reciperadar from "../images/reciperadar_img.png";
 import story_teller from "../images/story_generator.png";
+import booking_dot_com from "../images/booking-dot-com.png";
 
 export function Project() {
   const buttonStyle = {
@@ -34,7 +35,6 @@ export function Project() {
     <Element name="projectSection" id="projects">
       <VStack spacing={25} align="center">
         <Box textAlign="center" mb={{ base: 8, md: 0 }}>
-
           {/* Heading with responsive font sizes */}
 
           <Heading as="h1" size="xl" color="#EDF2F7" mb={4}>
@@ -48,7 +48,7 @@ export function Project() {
           >
             Projects
           </Heading>
-        </Box>   
+        </Box>
         <SimpleGrid
           columns={{ base: 1, md: 2, lg: 3 }}
           gap={{ base: 10, md: 50, lg: 50 }}
@@ -70,20 +70,84 @@ export function Project() {
               transition="transform 5s"
               _hover={{ transform: "scale(1.2)" }}
             >
-              <Image src={reciperadar} width={400} alt="" />
+              <Image src={booking_dot_com} width={400} alt="" />
             </Box>
             <Text className="project-title" fontSize={20} fontWeight={700}>
-              RecipeRadar
+              Booking.com Clone
             </Text>
             <Text className="project-description" mt={2}>
-            RecipeRadar leverages generative AI to curate a personalized cooking experience
+              Booking.com is an online platform for booking hotels, resorts, and
+              vacation stays across the globe
             </Text>
             <Box mt={2}>
               <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
                 Tech stack:
               </Text>
               <Text display="inline" ml={1}>
-                HTML, CSS, JavaScript, Python, OpenAI API, Django, Vue.js, MySQL, Tailwind CSS
+                HTML, CSS, React, TypeScript, Node.js, Express, MongoDB, Tailwind CSS
+              </Text>
+            </Box>
+            <Flex mt={5} justifyContent={"center"}>
+              <Link
+                href="https://github.com/sharunnd/booking.com-clone"
+                target="_blank"
+                rel="noopener noreferrer"
+                mx={5}
+              >
+                <IconButton
+                  bg="#e2e9ed"
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
+                  icon={<AiFillGithub />}
+                  fontSize={20}
+                  rounded={"50%"}
+                />
+              </Link>
+              <Link
+                href="https://booking-dot-com-clone.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                mx={5}
+              >
+                <IconButton
+                  bg="#e2e9ed"
+                  _hover={{ bg: "#1DA1F2", color: "white" }}
+                  icon={<AiFillEye />}
+                  fontSize={20}
+                  rounded={"50%"}
+                />
+              </Link>
+            </Flex>
+          </Box>
+
+          <Box
+            className="project-card"
+            p={10}
+            boxShadow="md"
+            _hover={{ boxShadow: "0px 5px 15px #adaeaf" }}
+            rounded="xl"
+            bg="white"
+          >
+            <Box
+              mb={5}
+              transition="transform 5s"
+              _hover={{ transform: "scale(1.2)" }}
+            >
+              <Image src={reciperadar} width={400} alt="" />
+            </Box>
+            <Text className="project-title" fontSize={20} fontWeight={700}>
+              RecipeRadar
+            </Text>
+            <Text className="project-description" mt={2}>
+              RecipeRadar leverages generative AI to curate a personalized
+              cooking experience
+            </Text>
+            <Box mt={2}>
+              <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
+                Tech stack:
+              </Text>
+              <Text display="inline" ml={1}>
+                HTML, CSS, JavaScript, Python, OpenAI API, Django, Vue.js,
+                MySQL, Tailwind CSS
               </Text>
             </Box>
             <Flex mt={5} justifyContent={"center"}>
@@ -334,8 +398,8 @@ export function Project() {
                 Tech stack:
               </Text>
               <Text display="inline" ml={1}>
-                HTML, CSS, JavaScript, OpenAI, React, Tailwind CSS, Node.js, Express,
-                MongoDB
+                HTML, CSS, JavaScript, OpenAI, React, Tailwind CSS, Node.js,
+                Express, MongoDB
               </Text>
             </Box>
             <Flex mt={5} justifyContent={"center"}>
@@ -390,16 +454,15 @@ export function Project() {
               Story Generator
             </Text>
             <Text className="project-description" mt={2}>
-            
-           It is a storytelling website powered by the OpenAI API!.
+              It is a storytelling website powered by the OpenAI API!.
             </Text>
             <Box mt={2}>
               <Text color={"#1DA1F2"} display="inline" fontWeight={500}>
                 Tech stack:
               </Text>
               <Text display="inline" ml={1}>
-                HTML, CSS, JavaScript, OpenAI, React, Chakra UI, Node.js, Express,
-                MongoDB
+                HTML, CSS, JavaScript, OpenAI, React, Chakra UI, Node.js,
+                Express, MongoDB
               </Text>
             </Box>
             <Flex mt={5} justifyContent={"center"}>

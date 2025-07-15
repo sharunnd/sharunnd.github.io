@@ -12,7 +12,6 @@ import ScrollIcon from './components/ScrollIcon';
 
 function App() {
   
-
   return (
     <Box>
       <Navbar />
