@@ -1,0 +1,91 @@
+/* ==========================================================================
+   Design tokens — single source of truth for both Chakra (via semanticTokens
+   referencing these vars) and plain CSS. Theme is switched by the
+   [data-theme] attribute on <html>, set pre-paint by the inline script in
+   public/index.html and kept in sync with Chakra's color mode by
+   <ColorModeSync/>.
+   ========================================================================== */
+
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --bg: #09090b;
+  --surface: #111114;
+  --card: #17171a;
+  --card-hover: #1d1d21;
+
+  --border: rgba(255, 255, 255, 0.06);
+  --border-strong: rgba(255, 255, 255, 0.11);
+
+  --text: #fafafa;
+  --text-muted: #a1a1aa;
+  --text-faint: #6b6b73;
+
+  --accent: #c87d4b;
+  --accent-bright: #e2a063;
+  --accent-contrast: #1a1206; /* text on a solid accent fill */
+  --gold: #d8b26a;
+  --accent-wash: rgba(200, 125, 75, 0.1);
+  --focus: #e2a063;
+
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px -8px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 60px -16px rgba(0, 0, 0, 0.55);
+  --glow-cta: 0 0 0 1px rgba(200, 125, 75, 0.25),
+    0 12px 40px -12px rgba(200, 125, 75, 0.2);
+  --top-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  --scrollbar-track: #111114;
+  --scrollbar-thumb: #2c2c31;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #faf8f5;
+  --surface: #f3efea;
+  --card: #ffffff;
+  --card-hover: #f7f3ee;
+
+  --border: rgba(24, 20, 16, 0.1);
+  --border-strong: rgba(24, 20, 16, 0.16);
+
+  --text: #1a1714;
+  --text-muted: #6b6459;
+  --text-faint: #9a9186;
+
+  --accent: #b4622f;
+  --accent-bright: #9a5326;
+  --accent-contrast: #fdf6ef;
+  --gold: #a9822e;
+  --accent-wash: rgba(180, 98, 47, 0.08);
+  --focus: #b4622f;
+
+  --shadow-sm: 0 1px 2px rgba(24, 20, 16, 0.06);
+  --shadow-md: 0 10px 30px -12px rgba(24, 20, 16, 0.14);
+  --shadow-lg: 0 28px 64px -20px rgba(24, 20, 16, 0.2);
+  --glow-cta: 0 0 0 1px rgba(180, 98, 47, 0.22),
+    0 14px 40px -14px rgba(180, 98, 47, 0.28);
+  --top-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+
+  --scrollbar-track: #ece6de;
+  --scrollbar-thumb: #cdbfae;
+}
+
+/* Layout scale — shared by Chakra components and CSS */
+:root {
+  --container-max: 1200px;
+  --container-bleed: 1360px;
+  --gutter: clamp(20px, 5vw, 64px);
+  --section-py: clamp(96px, 12vh, 160px);
+  --measure: 68ch;
+
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 14px;
+  --r-lg: 20px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-soft: cubic-bezier(0.2, 0.6, 0.2, 1);
+}

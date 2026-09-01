@@ -1,121 +1,185 @@
-import {
-  Box,
-  Text,
-  Image,
-  HStack,
-  Link,
-  IconButton,
-  Flex,
-} from "@chakra-ui/react";
-import { Element } from "react-scroll";
-import profilePic from "../images/profile-pic.jpg";
-import { AiFillGithub, AiOutlineLinkedin } from "react-icons/ai";
-import TypeWriterEffect from "react-typewriter-effect";
+import { useEffect, useState } from "react";
+import { Box, Grid, Text, Icon, Flex } from "@chakra-ui/react";
+import { scroller } from "react-scroll";
+import { FiGithub, FiLinkedin, FiArrowDownRight } from "react-icons/fi";
+import Section from "./layout/Section";
+import MagneticButton from "./ui/MagneticButton";
+import IconLink from "./ui/IconLink";
+import site from "../data/site";
+import profilePic from "../images/profile-pic.png";
+
+const HEADLINE = ["I", "build", "fast,", "considered", "interfaces", "for", "the", "web."];
 
 export function Home() {
-  const fontSize = {
-    base: "20px", // Adjust the base font size as needed
-    md: "30px", // Adjust the medium screen font size as needed
-    lg: "40px", // Adjust the large screen font size as needed
-  };
+  const [entered, setEntered] = useState(false);
+
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setEntered(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
+
+  const goToWork = () =>
+    scroller.scrollTo("projectSection", { smooth: true, duration: 600, offset: -72 });
+
   return (
-    <Element name="homeSection" id="home">
-      <Flex
-        width="100%"
-        direction={{ base: "column", lg: "row" }} // Stack on base, row on large screens
-        justifyContent="space-between"
-        alignItems={"center"} // Center vertically on base, flex-start on large screens
-        padding={{ base: "10%", sm: "20%", md: "10%", lg: "10%" }}
-        // border="1px solid green"
-        pt={{ base: "25%" }}
+    <Section
+      name="homeSection"
+      hasHeader={false}
+      aria-label="Introduction"
+      py="0"
+      minH={{ base: "auto", lg: "100vh" }}
+      display="flex"
+      alignItems="center"
+      pt={{ base: "128px", lg: "72px" }}
+      pb={{ base: "96px", lg: "72px" }}
+      overflow="hidden"
+    >
+      <Box
+        aria-hidden
+        position="absolute"
+        inset={0}
+        pointerEvents="none"
+        sx={{
+          background:
+            "radial-gradient(60% 55% at 78% 18%, var(--accent-wash), transparent 70%)",
+        }}
+      />
+
+      <Grid
+        className={entered ? "hero-in" : undefined}
+        templateColumns={{ base: "1fr", lg: "1.12fr 0.88fr" }}
+        gap={{ base: 14, lg: 20 }}
+        alignItems="center"
+        w="100%"
       >
-        <Box
-          width={{ base: "100%", md: "80%", lg: "50%" }}
-          textAlign={{ md: "left" }}
-          boxShadow="xs"
-          borderRadius="10px"
-          bg="#EDF2F7"
-          p={{ base: 6, md: 8 }}
-          // border="1px solid red"
-        >
-          <Text
-            fontFamily={"initial"}
-            fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }}
-            fontWeight={700}
-            color="#100f0f"
-          >
-            Hi, I'm
-          </Text>
-          <Text
-            fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }}
-            fontWeight={700}
-            color="#1DA1F2"
-          >
-            Sharun N D
-          </Text>
+        <Box>
           <Box
-            color="#1DA1F2"
-            fontSize={{ base: fontSize.base, md: fontSize.md, lg: fontSize.lg }}
+            className="hero-line"
+            style={{ "--i": 0 }}
+            fontFamily="mono"
+            fontSize="eyebrow"
+            letterSpacing="0.16em"
+            textTransform="uppercase"
+            color="accent.solid"
+            mb={7}
           >
-            <TypeWriterEffect
-              startDelay={100}
-              cursorColor="#1DA1F2"
-              text="Full Stack Web Developer"
-              typeSpeed={100}
-              loop={true}
+            {site.role} · {site.base}
+          </Box>
+
+          <Box
+            as="h1"
+            fontSize="display"
+            fontWeight={380}
+            lineHeight="1.05"
+            letterSpacing="-0.02em"
+            mb={8}
+          >
+            {HEADLINE.map((word, i) => (
+              <Box
+                as="span"
+                key={`${word}-${i}`}
+                className="hero-line"
+                style={{ "--i": i + 1 }}
+                display="inline-block"
+                mr="0.28em"
+                color={word === "web." ? "accent.solid" : "text.primary"}
+              >
+                {word}
+              </Box>
+            ))}
+          </Box>
+
+          <Box
+            className="hero-line"
+            style={{ "--i": HEADLINE.length + 1 }}
+            fontFamily="mono"
+            fontSize="caption"
+            color="text.faint"
+            letterSpacing="0.04em"
+            mb={7}
+          >
+            React &nbsp;·&nbsp; TypeScript &nbsp;·&nbsp; Design Systems &nbsp;·&nbsp; Performance
+          </Box>
+
+          <Text
+            className="hero-line"
+            style={{ "--i": HEADLINE.length + 2 }}
+            fontSize="lead"
+            color="text.muted"
+            maxW="52ch"
+            mb={10}
+          >
+            A full-stack web developer who's passionate about turning ideas into reality.
+            I'm dedicated to delivering high-quality products that are both visually
+            stunning and highly functional.
+          </Text>
+
+          <Flex
+            className="hero-line"
+            style={{ "--i": HEADLINE.length + 3 }}
+            align="center"
+            gap={5}
+            wrap="wrap"
+          >
+            <MagneticButton
+              variant="cta"
+              onClick={goToWork}
+              rightIcon={<Icon as={FiArrowDownRight} boxSize="16px" />}
+            >
+              View selected work
+            </MagneticButton>
+            <Flex align="center" gap={6} pl={1}>
+              <IconLink icon={FiGithub} href={site.github} aria-label="GitHub">
+                GitHub
+              </IconLink>
+              <IconLink icon={FiLinkedin} href={site.linkedin} aria-label="LinkedIn">
+                LinkedIn
+              </IconLink>
+            </Flex>
+          </Flex>
+        </Box>
+
+        <Box
+          className="hero-line"
+          style={{ "--i": HEADLINE.length + 2 }}
+          justifySelf={{ base: "start", lg: "center" }}
+          position="relative"
+          w={{ base: "180px", sm: "220px", lg: "300px" }}
+          flexShrink={0}
+        >
+          <Box
+            aria-hidden
+            position="absolute"
+            inset={0}
+            transform="translate(16px, 16px)"
+            border="1px solid"
+            borderColor="accent.solid"
+            borderRadius="lg"
+            opacity={0.5}
+          />
+          <Box
+            position="relative"
+            borderRadius="lg"
+            overflow="hidden"
+            border="1px solid"
+            borderColor="border.strong"
+            boxShadow="lg"
+          >
+            <Box
+              as="img"
+              src={profilePic}
+              alt="Sharun N D"
+              display="block"
+              w="100%"
+              sx={{ aspectRatio: "4 / 5" }}
+              objectFit="cover"
+              filter="grayscale(0)"
+              transition="filter 500ms var(--ease-out), transform 600ms var(--ease-out)"
+              _hover={{ filter: "grayscale(1) contrast(1.02)", transform: "scale(1.03)" }}
             />
           </Box>
-          <Text fontSize={{ base: 16, md: 18 }} color="#444c61" mt={2}>
-            A full-stack web developer who's passionate about turning ideas into
-            reality. I'm dedicated to delivering high-quality products that are
-            both visually stunning and highly functional.
-          </Text>
-          <HStack spacing={4} mt={2}>
-            <Link
-              href="https://github.com/sharunnd"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IconButton
-                bg="#EDF2F7"
-                _hover={{ bg: "#1DA1F2", color: "white" }}
-                icon={<AiFillGithub />}
-                fontSize={20}
-                rounded={"50%"}
-              />
-            </Link>
-            <Link
-              href="https://www.linkedin.com/in/sharun-n-d-8351191b3/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <IconButton
-                bg="#EDF2F7"
-                _hover={{ bg: "#1DA1F2", color: "white" }}
-                icon={<AiOutlineLinkedin />}
-                fontSize={20}
-                rounded={"50%"}
-              />
-            </Link>
-          </HStack>
         </Box>
-        <Box
-          marginTop={{ base: 4, lg: 0 }}
-          borderRadius="10px"
-          // border="1px solid blue"
-          width={{ base: "100%", lg: "45%" }} // Full width on base, 45% width on large screens
-          display="flex"
-          justifyContent="center"
-        >
-          <Image
-            src={profilePic}
-            className="home-img"
-            borderRadius="10px"
-            boxSize={{ base: "150px", md: "180px", lg: "190px" }} // image size for different screens
-            alt="sharun"
-          />
-        </Box>
-      </Flex>
-    </Element>
+      </Grid>
+    </Section>
   );
 }

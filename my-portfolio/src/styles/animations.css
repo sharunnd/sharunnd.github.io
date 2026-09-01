@@ -1,0 +1,67 @@
+/* ==========================================================================
+   Motion utilities — scroll reveals, staggering, and the underline effect.
+   All are opt-in via className and fully disabled under reduced-motion.
+   ========================================================================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 70ms);
+}
+
+/* hint the compositor only while the element still has to animate */
+.reveal:not(.is-visible) {
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero intro — one-time, slightly larger travel, word-level staggering */
+.hero-line {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.7s var(--ease-out), transform 0.7s var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+.hero-in .hero-line {
+  opacity: 1;
+  transform: none;
+}
+
+/* Animated underline for text links */
+.u-link {
+  position: relative;
+  text-decoration: none;
+}
+.u-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -3px;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.24s var(--ease-soft);
+}
+.u-link:hover::after,
+.u-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .hero-line {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .u-link::after {
+    transition: none;
+  }
+}
